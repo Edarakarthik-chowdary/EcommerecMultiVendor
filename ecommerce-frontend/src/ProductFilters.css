@@ -1,0 +1,38 @@
+/* Category and brand dropdown filters */
+.product-filter-selectors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 14px;
+}
+.product-filter-select {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 170px;
+  color: #52647b;
+  font-size: 13px;
+  font-weight: 600;
+}
+.product-filter-select select {
+  min-height: 44px;
+  min-width: 170px;
+  padding: 0 38px 0 13px;
+  border: 1px solid #dbe4f0;
+  border-radius: 12px;
+  background: #fff;
+  color: #172b4d;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  outline-offset: 3px;
+}
+.product-filter-select select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+@media (max-width: 600px) {
+  .product-filter-selectors { display: grid; grid-template-columns: 1fr; }
+  .product-filter-select, .product-filter-select select { width: 100%; min-width: 0; }
+}

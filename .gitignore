@@ -1,0 +1,6 @@
+target/
+.idea/
+ecommerce-frontend/node_modules/
+ecommerce-frontend/dist/
+ecommerce-frontend/build/
+.env
